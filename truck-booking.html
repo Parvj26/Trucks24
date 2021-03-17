@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trucks24 Booking Form</title>
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="about-logo" href="images/about-logo.png"sizes="32x32">
+  <link rel="shortcut icon" type="image/ico" href="images/fevicon.ico"sizes="32x32" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="css/booking/style.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142991743-1">
+  </script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142991743-1');
+  gtag('config', 'AW-689009816');
+  </script>	
+ <!--[if lt IE 9]>
+     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Trucks24</span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+          <div class="col-xs-12 hidden-sm col-md-5">
+              <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
+                  <img id="optionalstuff"src="images/booking_image.png" alt="" width="125%" height="125%">
+              </figure>
+          </div>
+        <h3>Download our Trucks24 App and Enjoy additional features like 24/7 Live Tracking, Complimentary Insurance and Many More.</h3>
+        <a class="bttn-white wow fadeInUp"target="_blank"href="freight-transportation-app.html">Read More</a>
+      </div>
+      <div class="contact">
+        <h1>Truck Booking Form</h1>
+        <div class="alert">We've Received Your Booking Request. We will call you Shortly. </div>
+        <div class="container">
+          <div class="row">
+                  <div class="contact-us">
+                          <form id="contactForm">
+                                  <div class="alert">We've Received Your Booking Request. We will call you Shortly. </div>
+                          <div class="title">
+                            <h2>Book Truck</h2>
+                          </div>
+                          <div class="form">
+                            <div class="form-items">
+                              <input type="text" class="input" id="pickup_search_term" placeholder="Pickup Location">
+                              <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-items">
+                              <input type="text" class="input" id="dropoff_search_term" placeholder="Drop Location">
+                              <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="form-items">
+                                  <input type="date" id="pickup_date" class="input" placeholder="Pickup Date & Time">
+                                  <i class="fas fa-envelope"></i>
+                             </div>
+                          </div>
+                          <p>
+                                  <label style="color: #535274;">Truck Type</label>
+                                      <div class="toggle">
+                                              <input id="student" name="cars" type="radio" class="radio_input" onclick="show1(); show2();" value="Open" required/>
+                                              <label for="student" class="custom_radio_label">Open Truck</label>
+                                              <input id="teacher" name="cars" type="radio" class="radio_input" onclick="show3(); show4();" value="closed" required />
+                                              <label for="teacher" class="custom_radio_label">Container</label>
+                                      </div>
+
+                              <script>
+                                      function show1(){
+                                      document.getElementById('Cars2').style.display ='block';
+                                      }
+                                      function show2(){
+                                      document.getElementById('Cars3').style.display ='none';
+                                      }
+                            
+                                      function show3(){
+                                      document.getElementById('Cars3').style.display = 'block';
+                                      }
+                                      function show4(){
+                                      document.getElementById('Cars2').style.display = 'none';
+                                      }
+                                      </script>
+                            
+                                      
+                                      <p>
+                                          <div class="myBox" id="Cars2">
+                                          <label style="color: #535274;">Truck Capacity</label>
+                                          <div class="cc-selector-2">
+                                              <input id="threeton" type="radio" name="creditcard" value="threeton" />
+                                              <label class="drinkcard-cc threeton" for="threeton"></label>
+                                              <input id="fourton" type="radio" name="creditcard" value="fourton" />
+                                              <label class="drinkcard-cc fourton" for="fourton"></label>
+                                              <input id="fiveton" type="radio" name="creditcard" value="fiveton" />
+                                              <label class="drinkcard-cc fiveton"for="fiveton"></label>
+                                              <input id="seventon" type="radio" name="creditcard" value="seventon" />
+                                              <label class="drinkcard-cc seventon"for="seventon"></label>
+                                              <input id="nineton" type="radio" name="creditcard" value="nineton" />
+                                              <label class="drinkcard-cc nineton"for="nineton"></label>
+                                              <input id="eleventon" type="radio" name="creditcard" value="eleventon" />
+                                              <label class="drinkcard-cc eleventon"for="eleventon"></label>
+                                              <input id="fifteenton" type="radio" name="creditcard" value="fifteenton" />
+                                              <label class="drinkcard-cc fifteenton"for="fifteenton"></label>
+                                              <input id="eighteenton" type="radio" name="creditcard" value="eighteenton" />
+                                              <label class="drinkcard-cc eighteenton"for="eighteenton"></label>
+                                              <input id="twentyoneton" type="radio" name="creditcard" value="twentyoneton" />
+                                              <label class="drinkcard-cc twentyoneton"for="twentyoneton"></label>
+                                              <input id="twentyfiveton" type="radio" name="creditcard" value="twentyfiveton" />
+                                              <label class="drinkcard-cc twentyfiveton"for="twentyfiveton"></label>
+                                              <input id="twentyfiveton2" type="radio" name="creditcard" value="twentyfiveton2" />
+                                              <label class="drinkcard-cc twentyfiveton2"for="twentyfiveton2"></label>
+                                              <input id="thirtyoneton" type="radio" name="creditcard" value="thirtyoneton" />
+                                              <label class="drinkcard-cc thirtyoneton"for="thirtyoneton"></label>
+                                              <input id="thirtyfiveton" type="radio" name="creditcard" value="thirtyfiveton" />
+                                              <label class="drinkcard-cc thirtyfiveton"for="thirtyfiveton"></label>
+                                          </div>
+                                          </div>
+                            
+                                      <div class="myBox" id="Cars3">              
+                                            <div class="cc-selector-2">
+                                               <input id="fourtonc" type="radio" name="containertruck" value="fourtonc" />
+                                               <label class="drinkcard-cc fourtonc" for="fourtonc"></label>
+                                               <input id="ninetonc" type="radio" name="containertruck" value="ninetonc" />
+                                               <label class="drinkcard-cc ninetonc" for="ninetonc"></label>
+                                               <input id="eleventonc" type="radio" name="containertruck" value="eleventonc" />
+                                               <label class="drinkcard-cc eleventonc" for="eleventonc"></label>
+                                               <input id="fifteentonc" type="radio" name="containertruck" value="fifteentonc" />
+                                               <label class="drinkcard-cc fifteentonc"for="fifteentonc"></label>
+                                               <input id="eighteentonc" type="radio" name="containertruck" value="eighteentonc" />
+                                               <label class="drinkcard-cc eighteentonc"for="eighteentonc"></label>
+                                               <input id="twentyonetonc" type="radio" name="containertruck" value="twentyonetonc" />
+                                               <label class="drinkcard-cc twentyonetonc"for="twentyonetonc"></label>
+                                               <input id="twentyfivetonc" type="radio" name="containertruck" value="twentyfivetonc" />
+                                               <label class="drinkcard-cc twentyfivetonc"for="twentyfivetonc"></label>
+                                           </div>
+                                        </div>
+                                      </p>
+
+                                <a class="btn first" href="#open-modal">Get Instant Rates</a>
+                            <div id="open-modal" class="modal-window">
+                                  <div class="contact-us">
+                              <div>
+                                <a href="#" title="Close" class="modal-close">Close</a>      
+                                <div class="title">
+                                      <h3>Please Enter Your Contact Details</h3>
+                                    </div>
+                                <div class="form">
+                                  <div class="form-items">
+                                    <input type="text" class="input" id="name" placeholder="Name">
+                                    <i class="fas fa-user"></i>
+                                  </div>
+                                  <div class="form-items">
+                                    <input type="text" name="Phone Number" pattern="[7-9]{1}[0-9]{9}" class="input" id="mobile_no" placeholder="Mobile Number">
+                                    <i class="fas fa-envelope"></i>
+                                  </div>
+                                  <div class="form-items">
+                                        <input type="text" class="input" id="company_name" placeholder="Your Comapny Name">
+                                        <i class="fas fa-envelope"></i>
+                                  </div>
+                                   <button type="submit" id="submit" class="designerbtn third"> Submit</button>
+                                </div>
+                                   </div>
+                                </div>
+                                </div>
+                              </form>
+
+                  </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+    
+  <!--Google Maps API-->
+  <script>
+    function activatePlacesSearch(){
+        var Pickupinput = document.getElementById('pickup_search_term');
+        var Dropoffinput = document.getElementById('dropoff_search_term');
+        var autocomplete = new google.maps.places.Autocomplete(Pickupinput);
+        autocomplete.setComponentRestrictions({'country': ['in']});
+        var autocomplete = new google.maps.places.Autocomplete(Dropoffinput);
+        autocomplete.setComponentRestrictions({'country': ['in']});
+    }
+</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrG9WtJlBp3JfVxRsf58K_HiKuAOdY3Wk&libraries=places&callback=activatePlacesSearch"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="js/booking/main.js"></script>
+</body>
+</html>
